@@ -37,7 +37,9 @@ def test_circ_area():
         pass
 
     # Add a test with additional arguments
-
+    dict1 = {'radius':3,'foo':20,'bar':10}
+    result = func.circ_area(**dict1)
+    introcs.assert_floats_equal(28.274333882308138,result)
 
 if __name__ == '__main__':
     test_circ_area()
